@@ -1,0 +1,25 @@
+Question 1
+Menu Réseau. 23requêtes avec 200 comme code retour.
+Au rechargement: même nombre de requêtes,
+mais la plupart ont 304 (Not Modified) comme code de retour.
+
+Question 2
+La connexion est persitante, du fait de l'en-tête "Connexion: Keep-Alive".
+
+Question 3
+Les en-têtes envoyés par le client sont les mêmes,
+celle du serveur diffèrent car la première fois il est signalé
+que c'est le résultat d'un appel à PHP, l'autre requête étant un simple fichier.
+
+Question 4
+Les en-têtes du serveur font apparaître l'en-tête "Set-Cookie".
+
+Question 5
+La partie de la page correspondant à la balise sur laquelle passe la souris
+est grisée et ses dimensions sont indiquées, afin de voir quelle partie du
+code est responsable de la partie de la page.
+A droite sont indiquées les cascades de style intervenant dans le rendu
+graphique du contenu de la balise. Il est possible de désactiver les styles
+un par un pour comprendre l'effet de chacun.
+Encore plus à droite, un rectangle permet de visualiser
+les propriétés du bloc typographique. 

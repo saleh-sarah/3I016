@@ -1,0 +1,3 @@
+
+Il faut écrire:
+open machine port

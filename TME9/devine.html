@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+    <title>Devine</title>
+</head>
+<body onload="init();">
+<h1> Deviner un Nombre </h1>
+<form action = '' onsubmit='return false'>
+<label for='nb'>Saisir votre proposition</label>
+<input id='nb' onchange='controler(this)' />
+</form>
+<script type="application/javascript">
+function init(){
+    nbadeviner = Math.floor(Math.random()*10+1);
+}
+
+function controler(input){
+    n = input.value;
+    if (isNaN(n))
+         alert( " Farceur, ce n'est pas un nombre !");
+    else  if (n == nbadeviner) {
+         alert( "gagné");
+    } else if (n <  nbadeviner)
+              alert("C'est plus");
+          else 
+              alert("C'est moins");
+}
+</script>
+</body>
+</html>

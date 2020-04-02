@@ -1,0 +1,2 @@
+Les images demandées à travers la feuille de style pour l'écran sont chargées,
+mais pas si l'on utilise l'autre feuille de styles.

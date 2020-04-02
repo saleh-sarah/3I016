@@ -1,0 +1,21 @@
+<html>
+  <head>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+    <title>Qui suis-je</title>
+    <title>Informations issues du navigateur</title>
+    <script type="text/javascript"><!--
+      info = new Array(
+	"Nom du Navigateur : " + navigator.appName,
+	"Description du Navigateur : " + navigator.userAgent,
+	"Date de modification : " + document.lastModified,
+	"URL : " + document.location,
+	"URL d'origine : " + document.referrer,
+	"Type du document : " + (document.doctype ? document.doctype.publicId : 'inconnu')
+	);
+     --></script>
+  </head>
+  <body onload='alert(info.join("\n"))'><script type="text/javascript"><!--
+	document.writeln('<ul><li>'+ info.join("</li>\n<li>") + '</li></ul>')
+	// --></script></body>
+</html>
